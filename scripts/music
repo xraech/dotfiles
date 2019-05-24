@@ -1,0 +1,3 @@
+#!/bin/dash
+
+st -t music -c music ncmpcpp

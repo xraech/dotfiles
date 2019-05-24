@@ -1,0 +1,17 @@
+#!/bin/dash
+
+status=$(mpc status | grep playing | cut -f1 -d "]")
+
+if [ "$1" = "toggle" ]; then
+
+	if [ ${status} = "[playing" ]; then
+		mpc pause
+	else
+		mpc play && mpddunst
+	fi
+
+else
+	mpc $1 && mpddunst 
+fi
+
+
