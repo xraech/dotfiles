@@ -1,3 +1,0 @@
-#!/bin/dash
-
-sudo runit-init 0
