@@ -291,7 +291,7 @@
     foreground = "#3A372E"
     frame_color = "#3a372E"
     history_ignore = true
-    format = "<span font="InconsolataGo Nerd Font Mono 15" letter_spacing="3096">%b</span>"
+    format = "<span font="InconsolataGo Nerd Font Mono 13" letter_spacing="3096">%s</span>"
     timeout = 3
 [mpd_notifier]
     appname = "mpd_notifier"
@@ -301,7 +301,7 @@
 [clock_notifier]
     appname = "clock_notifier"
 	frame_color = "#3a372E"
-    format = "<span font="MYuen PRC 15" style="Regular">%s</span>"
+    format = "<span font="MYuen PRC 13" style="normal">%s</span>"
     history_ignore = true
 	shrink = yes
     timeout = 3    
