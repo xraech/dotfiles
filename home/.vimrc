@@ -36,19 +36,19 @@ inoremap {{		{}<Left>
 inoremap {<CR>	{<CR>}<Esc>O
 
 " Cursor Settings
-let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-let &t_SR = "\<esc>]50;CursorShape=2\x7" " Underline in replace mode
+let &t_SI = "\<Esc>[6 q" " Vertical bar in insert mode
+let &t_EI = "\<Esc>[2 q" " Block in normal mode
+let &t_SR = "\<esc>[4 q" " Underline in replace mode
 
 " Display Settings
 set t_Co=256
-set termguicolors
+"set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 set background=dark " Setting dark mode
 "colorscheme ryuuko
 "colorscheme monochrome
-colorscheme handmade-white
+"colorscheme handmade-white
 
 "set termguicolors
 "let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
