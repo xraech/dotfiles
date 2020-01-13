@@ -9,7 +9,7 @@ if version > 580
 endif
 
 set t_Co=256
-let g:colors_name = "linuxblue"
+let g:colors_name = "linuxt"
 
 "hi IncSearch -- no settings --
 "hi WildMenu -- no settings --
@@ -43,7 +43,7 @@ hi Normal guifg=#ccccfa guibg=#232836 guisp=#232836 gui=NONE ctermfg=189 ctermbg
 "hi CursorColumn -- no settings --
 "hi FoldColumn -- no settings --
 "hi EnumerationName -- no settings --
-"hi Visual -- no settings --
+hi Visual guifg=#282828 guibg=#dddddd
 "hi MoreMsg -- no settings --
 "hi SpellCap -- no settings --
 "hi VertSplit -- no settings --
@@ -78,7 +78,7 @@ hi LineNr guifg=#9290b8 guibg=NONE guisp=NONE gui=NONE ctermfg=103 ctermbg=NONE 
 hi StatusLine guifg=#00aaff guibg=NONE guisp=NONE gui=NONE ctermfg=39 ctermbg=NONE cterm=NONE
 hi Label guifg=#249ece guibg=NONE guisp=NONE gui=NONE ctermfg=32 ctermbg=NONE cterm=NONE
 hi PMenuSel guifg=#88dd88 guibg=#949698 guisp=#949698 gui=NONE ctermfg=114 ctermbg=246 cterm=NONE
-hi Search guifg=#282828 guibg=#c574dd guisp=#c574dd gui=NONE ctermfg=235 ctermbg=134 cterm=NONE
+hi Search guifg=#282828 guibg=#ccccfa guisp=#c574dd gui=NONE ctermfg=235 ctermbg=134 cterm=NONE
 hi Statement guifg=#aac2d7 guibg=NONE guisp=NONE gui=NONE ctermfg=152 ctermbg=NONE cterm=NONE
 hi Comment guifg=#6562a0 guibg=NONE guisp=NONE gui=NONE ctermfg=61 ctermbg=NONE cterm=NONE
 hi Character guifg=#cc7691 guibg=NONE guisp=NONE gui=NONE ctermfg=175 ctermbg=NONE cterm=NONE
@@ -91,7 +91,7 @@ hi PreProc guifg=#cc7691 guibg=NONE guisp=NONE gui=NONE ctermfg=175 ctermbg=NONE
 hi Exception guifg=#249ece guibg=NONE guisp=NONE gui=NONE ctermfg=32 ctermbg=NONE cterm=NONE
 hi Keyword guifg=#249ece guibg=NONE guisp=NONE gui=NONE ctermfg=32 ctermbg=NONE cterm=NONE
 hi Type guifg=#249ece guibg=NONE guisp=NONE gui=NONE ctermfg=32 ctermbg=NONE cterm=NONE
-hi Cursor guifg=#c574dd guibg=NONE guisp=NONE gui=NONE ctermfg=134 ctermbg=NONE cterm=NONE
+hi Cursor guifg=#282828 guibg=#40FF40 guisp=NONE gui=NONE ctermfg=134 ctermbg=NONE cterm=NONE
 hi PMenu guifg=#dddddd guibg=#545658 guisp=#545658 gui=NONE ctermfg=253 ctermbg=240 cterm=NONE
 hi Constant guifg=#cc7691 guibg=NONE guisp=NONE gui=NONE ctermfg=175 ctermbg=NONE cterm=NONE
 hi String guifg=#cc7691 guibg=NONE guisp=NONE gui=NONE ctermfg=175 ctermbg=NONE cterm=NONE
