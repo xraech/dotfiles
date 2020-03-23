@@ -1,6 +1,0 @@
-#!/bin/dash
-
-ddate=`date +%H:%M`
-msgId="912381"
-ICON=/home/raech/.config/scripts/icons/clock.png
-dunstify -a "clock_notifier" -u low -i $ICON -r "$msgId" \ "$ddate" 
