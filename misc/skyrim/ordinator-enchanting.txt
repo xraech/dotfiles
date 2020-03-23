@@ -1,0 +1,37 @@
+# Enchanting PERKS
+
+player.addperk 000BEE97
+player.addperk 000C367C
+player.addperk 850394FA
+player.addperk 85039A6D
+player.addperk 850389FA
+player.addperk 00058F7F
+player.addperk 86000800
+player.addperk 86000801
+player.addperk 86000802
+player.addperk 86000803
+player.addperk 00058F7C
+player.addperk 00108A44
+player.addperk 6406EE57
+player.addperk 64101BEE
+player.addperk 860036CC
+player.addperk 860036CD
+player.addperk 860036CE
+
+player.removeperk 000BEE97
+player.removeperk 000C367C
+player.removeperk 850394FA
+player.removeperk 85039A6D
+player.removeperk 850389FA
+player.removeperk 00058F7F
+player.removeperk 86000800
+player.removeperk 86000801
+player.removeperk 86000802
+player.removeperk 86000803
+player.removeperk 00058F7C
+player.removeperk 00108A44
+player.removeperk 6406EE57
+player.removeperk 64101BEE
+player.removeperk 860036CC
+player.removeperk 860036CD
+player.removeperk 860036CE
