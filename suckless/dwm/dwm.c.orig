@@ -213,12 +213,14 @@ static void resizeclient(Client *c, int x, int y, int w, int h);
 static void resizemouse(const Arg *arg);
 static void restack(Monitor *m);
 static void run(void);
+static void autorun(void);
 static void scan(void);
 static int sendevent(Client *c, Atom proto);
 static void sendmon(Client *c, Monitor *m);
 static void setclientstate(Client *c, long state);
 static void setfocus(Client *c);
 static void setfullscreen(Client *c, int fullscreen);
+static void fullscreen(const Arg *arg);
 static void setgaps(const Arg *arg);
 static void setlayout(const Arg *arg);
 static void setmfact(const Arg *arg);
@@ -1627,6 +1629,12 @@ scan(void)
 }
 
 void
+autorun(void)
+{
+	system(autostartfile);
+}
+
+void
 sendmon(Client *c, Monitor *m)
 {
 	if (c->mon == m)
@@ -1724,6 +1732,19 @@ setgaps(const Arg *arg)
 	else
 		selmon->gappx += arg->i;
 	arrange(selmon);
+}
+
+Layout *last_layout;
+void
+fullscreen(const Arg *arg)
+{
+	if (selmon->showbar) {
+		for(last_layout = (Layout *)layouts; last_layout != selmon->lt[selmon->sellt]; last_layout++);
+		setlayout(&((Arg) { .v = &layouts[2] }));
+	} else {
+		setlayout(&((Arg) { .v = last_layout }));
+	}
+	togglebar(arg);
 }
 
 void
@@ -2533,6 +2554,7 @@ main(int argc, char *argv[])
 		die("pledge");
 #endif /* __OpenBSD__ */
 	scan();
+	autorun();
 	run();
 	if(restart) execvp(argv[0], argv);
 	cleanup();

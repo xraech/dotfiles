@@ -1,6 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
+static const char *autostartfile	= "cd $HOME/Downloads/git/xraech/suckless/dwm/; ./autostart.sh";
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 20;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -12,16 +13,20 @@ static const int vertpad            = 20;       /* vertical padding of bar */
 static const int sidepad            = 20;       /* horizontal padding of bar */
 static const char *fonts[]          = { "monospace:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-	[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
+static char normbgcolor[]           = "#222222";
+static char normbordercolor[]       = "#444444";
+static char normfgcolor[]           = "#bbbbbb";
+static char selfgcolor[]            = "#eeeeee";
+static char selbordercolor[]        = "#005577";
+static char selbgcolor[]            = "#005577";
+static char hidfgcolor[]            = "#eeeeee";
+static char hidbordercolor[]        = "#005577";
+static char hidbgcolor[]            = "#005577";
+static char *colors[][3] = {
+       /*               fg           bg           border   */
+       [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
+       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
+       [SchemeHid]  = { hidfgcolor,  hidbgcolor,  hidbordercolor  }
 };
 
 /* tagging */
@@ -35,7 +40,7 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   isterminal noswallow monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           0,         0,        -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 2,       0,           0,         0,        -1 },
-	{ "Zathura",  NULL,       NULL,       1 << 3,       0,           0,         0,        -1 },
+	{ "Zathura",  NULL,       NULL,       1 << 3,       0,           0,         1,        -1 },
 	{ "st",       NULL,       NULL,       0,            0,           1,         1,        -1 },
 };
 
@@ -65,7 +70,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[]  = { "", NULL };
 static const char *termcmd[]  = { "st", NULL };
 
 #define SH(cmd) { .v = (const char*[]) { "/bin/sh", "-r", "-c", cmd, NULL } }
@@ -173,6 +178,8 @@ static Signal signals[] = {
 	{ "toggletagex",    toggletagex },
 	{ "killclient",     killclient },
 	{ "quit",           quit },
+	{ "fullscreen",     fullscreen },
+	{ "xrdb",           xrdb },
 	{ "setlayout",      setlayout },
 	{ "setlayoutex",    setlayoutex },
 };
