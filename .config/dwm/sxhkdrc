@@ -1,0 +1,109 @@
+#==============================================================================#
+#------------------------------------------------------------------------------#
+# Any WM
+
+super + Return
+	st #-f "M+ 2m":style=medium:size=12.5
+
+# Launch application menu
+super + r
+	~/.config/scripts/menu run -p "Run: "
+
+# Useful Apps
+alt + e
+	st -e vim
+alt + shift + e
+	gvim
+alt + w
+	firefox
+alt + m
+	discord
+alt + p
+	gpick
+
+alt + t
+	/home/raech/.config/scripts/xclock
+
+alt + shift + Print
+	~/.config/scripts/screenshot.sh -c
+shift + Print
+	~/.config/scripts/screenshot.sh -s
+Print
+	~/.config/scripts/screenshot.sh	
+
+# Media Keys
+XF86KbdBrightnessUp
+	$HOME/.config/scripts/kbdbrightness up
+XF86KbdBrightnessDown
+	$HOME/.config/scripts/kbdbrightness down
+XF86MonBrightnessUp
+	$HOME/.config/scripts/brightness inc
+XF86MonBrightnessDown
+	$HOME/.config/scripts/brightness dec
+XF86AudioMute
+	$HOME/.config/scripts/volume toggle
+XF86AudioNext
+	$HOME/.config/scripts/controlmusic next
+XF86AudioPause
+	$HOME/.config/scripts/controlmusic toggle
+XF86AudioPlay
+	$HOME/.config/scripts/controlmusic toggle
+XF86AudioPrev
+	$HOME/.config/scripts/controlmusic prev
+XF86AudioLowerVolume
+	$HOME/.config/scripts/volume down
+XF86AudioRaiseVolume 
+	$HOME/.config/scripts/volume up
+
+super + period
+	mpc volume +5
+super + comma
+	mpc volume -5
+
+# Reload Mouse Scroll
+alt + ctrl + Escape
+	pkill -9 imwheel; imwheel -b 45;notify-send 'Restarted Mouse Scrolling' --urgency low
+
+#==============================================================================#
+#------------------------------------------------------------------------------#
+# DWM SPECIFIC
+
+super + {k,j}
+	dwmc focusstack {-,+}1
+
+super + shift + {k,j}
+	dwmc movestack {-,+}1
+
+super + {h,l}
+	dwmc setmfact {-,+}0.05
+
+super + b
+	dwmc togglebar
+
+super + shift + p
+	dwmc togglefloating
+
+super + q
+	dwmc killclient
+
+super + shift + {q,r}
+	dwmc quit {0,1}
+
+super + Tab
+	dwmc view
+
+super + {t,f}
+	dwmc setlayoutex {0,1}
+
+super + m
+	dwmc fullscreen
+
+super + {_,ctrl +}{_,shift +} {1-5}
+	dwmc {_,toggle}{viewex,tagex} {0-4}
+
+super + 0
+	dwmc viewall
+
+alt + Escape
+	pkill -USR1 -x sxhkd;dwmc xrdb; notify-send 'Restarted SXHKD and DWM' --urgency low
+
