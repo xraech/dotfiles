@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
-static int borderpx = 50;
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -145,12 +145,6 @@ static unsigned int mousefg = 7;
 static unsigned int mousebg = 0;
 
 /*
- * Color used to display font attributes when fontconfig selected a font which
- * doesn't match the ones requested.
- */
-static unsigned int defaultattr = 11;
-
-/*
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
@@ -187,6 +181,20 @@ ResourcePref resources[] = {
 };
 
 /*
+ * Color used to display font attributes when fontconfig selected a font which
+ * doesn't match the ones requested.
+ */
+static unsigned int defaultattr = 11;
+/// Colors for the entities that are 'highlighted' in normal mode (search
+/// results currently on screen) [Vim Browse].
+static unsigned int highlightBg = 160;
+static unsigned int highlightFg = 15;
+/// Colors for highlighting the current cursor position (row + col) in normal
+/// mode [Vim Browse].
+static unsigned int currentBg = 8;
+static unsigned int currentFg = 15;
+
+/*
  * Force mouse select/shortcuts while mask is active (when MODE_MOUSE is set).
  * Note that if you want to use ShiftMask with selmasks, set this to an other
  * modifier, set to 0 to not use it.
@@ -199,23 +207,28 @@ static uint forcemousemod = ShiftMask;
  */
 static MouseShortcut mshortcuts[] = {
 	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ ShiftMask,           	Button4, ttysend,        {.s = "\031"} },
-	{ XK_NO_MOD,            Button4, kscrollup,      {.i =  2} },
-	{ XK_NO_MOD,            Button5, kscrolldown,    {.i =  2} },
-	{ ShiftMask,           	Button5, ttysend,        {.s = "\005"} },
+	{ XK_ANY_MOD,            Button4, kscrollup,      {.i = 2} },
+	{ XK_ANY_MOD,            Button5, kscrolldown,    {.i = 2} },
+	{ XK_ANY_MOD,            Button2, selpaste,       {.i = 0},      1 },
+	{ ShiftMask,             Button4, ttysend,        {.s = "\031"} },
+	{ ShiftMask,             Button5, ttysend,        {.s = "\005"} },
 };
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
+#define AltMask Mod1Mask
 #define TERMMOD (ControlMask|ShiftMask)
 
 static Shortcut shortcuts[] = {
 	/* mask                 keysym          function        argument */
+	{ AltMask,              XK_c,           normalMode,     {.i =  0} },
 	{ XK_ANY_MOD,           XK_Break,       sendbreak,      {.i =  0} },
 	{ ControlMask,          XK_Print,       toggleprinter,  {.i =  0} },
 	{ ShiftMask,            XK_Print,       printscreen,    {.i =  0} },
+	{ MODKEY|ControlMask,   XK_Return,      newterm,        {.i =  0} },
 	{ XK_ANY_MOD,           XK_Print,       printsel,       {.i =  0} },
+	{ MODKEY|ControlMask,   XK_j,           kscrollup,      {.i = 2} },
+	{ MODKEY|ControlMask,   XK_k,           kscrolldown,    {.i = 2} },
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
@@ -223,14 +236,9 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_V,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
-	{ ShiftMask,            XK_Page_Up,     kscrollup,      {.i = -1} },
-	{ ShiftMask,            XK_Page_Down,   kscrolldown,      {.i = -1} },
-	{ MODKEY|ControlMask,         	  	XK_j,   		kscrollup,    {.i = -1} },
-	{ MODKEY|ControlMask,            	XK_k,   		kscrolldown,    {.i = -1} },
- 	{ ControlMask,          XK_j,           kscrollup,      {.i =  2} },
- 	{ ControlMask,          XK_k,	        kscrolldown,    {.i =  2} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ TERMMOD,              XK_Return,      newterm,        {.i =  0} },
+	{ XK_ANY_MOD,           XK_Page_Up,     kscrollup,      {.i = -1} },
+	{ XK_ANY_MOD,           XK_Page_Down,   kscrolldown,    {.i = -1} },
 };
 
 /*
@@ -502,3 +510,45 @@ static char ascii_printable[] =
 	" !\"#$%&'()*+,-./0123456789:;<=>?"
 	"@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_"
 	"`abcdefghijklmnopqrstuvwxyz{|}~";
+
+
+/// word sepearors normal mode
+/// [Vim Browse].
+char wordDelimSmall[] = " \t!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~";
+char wordDelimLarge[] = " \t"; /// <Word sepearors normal mode (capital W)
+
+/// Shortcusts executed in normal mode (which should not already be in use)
+/// [Vim Browse].
+struct NormalModeShortcuts normalModeShortcuts [] = {
+	{ 'R', "?Building\n" },
+	{ 'r', "/Building\n" },
+	{ 'F', "?: error:\n" },
+	{ 'f', "/: error:\n" },
+	{ 'Q', "?[Leaving vim, starting execution]\n" },
+	{ 'S', "Qf" },
+	{ 'X', "?juli@machine\n" },
+	{ 'x', "/juli@machine\n" },
+};
+
+size_t const amountNormalModeShortcuts = sizeof(normalModeShortcuts) / sizeof(*normalModeShortcuts);
+
+/// Style of the command string visualized in normal mode in the right corner
+/// [Vim Browse].
+Glyph const styleCommand = {' ', ATTR_ITALIC | ATTR_FAINT, 7, 16};
+/// Style of the search string visualized in normal mode in the right corner.
+/// [Vim Browse].
+Glyph const styleSearch = {' ', ATTR_ITALIC | ATTR_BOLD_FAINT, 7, 16};
+
+/// Colors used in normal mode in order to highlight different operations and
+/// empathise the current position on screen  in  the status area [Vim Browse].
+unsigned int bgCommandYank = 11;
+unsigned int bgCommandVisual = 4;
+unsigned int bgCommandVisualLine = 12;
+
+unsigned int fgCommandYank = 232;
+unsigned int fgCommandVisual = 232;
+unsigned int fgCommandVisualLine = 232;
+
+unsigned int bgPos = 15;
+unsigned int fgPos = 16;
+

@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
-static const char *autostartfile	= "cd $HOME/Downloads/git/xraech/suckless/dwm/; ./autostart.sh";
+static const char *autostartfile	= ". $HOME/.config/dwm/autostart.sh";
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
 static const unsigned int gappx     = 20;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -39,7 +39,9 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   isterminal noswallow monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           0,         0,        -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 2,       0,           0,         0,        -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 1,       0,           0,         0,        -1 },
+	{ "Discord",  NULL,       NULL,       1 << 2,       0,           0,         0,        -1 },
+	{ "discord",  NULL,       NULL,       1 << 2,       0,           0,         0,        -1 },
 	{ "Zathura",  NULL,       NULL,       1 << 3,       0,           0,         1,        -1 },
 	{ "st",       NULL,       NULL,       0,            0,           1,         1,        -1 },
 };
@@ -80,6 +82,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -5 } },
 	{ MODKEY,                       XK_equal,  setgaps,        {.i = +5 } },
 	{ MODKEY|ShiftMask,             XK_equal,  setgaps,        {.i = 0  } },
+	{ MODKEY|ControlMask,           XK_space,  togglefloating, {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
