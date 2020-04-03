@@ -77,6 +77,7 @@ static const char *termcmd[]  = { "st", NULL };
 
 #define SH(cmd) { .v = (const char*[]) { "/bin/sh", "-r", "-c", cmd, NULL } }
 
+#include "movestack.c"
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_minus,  setgaps,        {.i = -5 } },
@@ -100,8 +101,8 @@ static Key keys[] = {
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
 static Button buttons[] = {
 	/* click                event mask      button          function        argument */
-	{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
-	{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
+	//{ ClkLtSymbol,          0,              Button1,        setlayout,      {0} },
+	//{ ClkLtSymbol,          0,              Button3,        setlayout,      {.v = &layouts[2]} },
 	{ ClkWinTitle,          0,              Button1,        togglewin,      {0} },
 	{ ClkWinTitle,          0,              Button2,        zoom,           {0} },
 	{ ClkStatusText,        0,              Button2,        spawn,          {.v = termcmd } },
@@ -170,6 +171,7 @@ static Signal signals[] = {
 	{ "tagmon",         tagmon },
 	{ "zoom",           zoom },
 	{ "view",           view },
+	{ "movestack",      movestack },
 	{ "viewall",        viewall },
 	{ "viewex",         viewex },
 	{ "toggleview",     view },
