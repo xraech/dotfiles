@@ -1,0 +1,2 @@
+#!/bin/dash
+doas /sbin/poweroff
