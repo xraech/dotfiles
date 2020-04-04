@@ -1,0 +1,15 @@
+# Begin /etc/fstab
+
+/dev/sdb1				/						ext4				defaults				0 1
+/dev/sda2				/mnt/arch				ext4				defaults				0 1
+/dev/sdc1				/mnt/games				ntfs-3g				defaults,exec			0 0
+/dev/nvme0n1p2			/mnt/windows			nfts-3g				defaults,exec			0 0
+
+
+proc					/proc					proc				nosuid,noexec,nodev		0 0
+sysfs					/sys					sysfs				nosuid,noexec,nodev		0 0
+devpts					/dev/pts				devpts				gid=5,mode=620			0 0
+devtmpfs				/dev					devtmpfs			mode=0755,nosuid		0 0
+tmpfs					/run					tmpfs				defaults				0 0
+
+tmpfs					/var/tmp/portage		tmpfs				rw,nosuid,noatime,nodev,size=12G,mode=775,uid=portage,gid=portage		0 0	

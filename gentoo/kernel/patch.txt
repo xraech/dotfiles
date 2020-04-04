@@ -1,0 +1,15 @@
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0001-MultiQueue-Skiplist-Scheduler-v0.196.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0002-Make-preemptible-kernel-default.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0003-Expose-vmsplit-for-our-poor-32-bit-users.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0004-Create-highres-timeout-variants-of-schedule_timeout-.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0005-Special-case-calls-of-schedule_timeout-1-to-use-the-.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0006-Convert-msleep-to-use-hrtimers-when-active.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0007-Replace-all-schedule-timeout-1-with-schedule_min_hrt.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0008-Replace-all-calls-to-schedule_timeout_interruptible-.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0009-Replace-all-calls-to-schedule_timeout_uninterruptibl.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0010-Don-t-use-hrtimer-overlay-when-pm_freezing-since-som.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0011-Make-hrtimer-granularity-and-minimum-hrtimeout-confi.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0012-Make-threaded-IRQs-optionally-the-default-which-can-.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0013-Reinstate-default-Hz-of-100-in-combination-with-MuQS.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0014-Swap-sucks.patch
+http://ck.kolivas.org/patches/5.0/5.4/5.4-ck1/patches/0015-Make-nohz_full-not-be-picked-up-as-a-default-config-.patch
