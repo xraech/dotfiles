@@ -1,15 +1,26 @@
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[X]
+virtual/wine vulkan
+
+
+#wine
+#required by media-libs/libsdl2-2.0.10::gentoo[X]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=x11-libs/libXcursor-1.2.0 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[X]
+# required by media-libs/libsdl2-2.0.10::gentoo[X]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=x11-libs/libXi-1.7.10 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[alsa]
+# required by media-libs/libsdl2-2.0.10::gentoo[alsa]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=media-libs/alsa-lib-1.2.1.2 abi_x86_32
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[cups]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=net-print/cups-2.2.13 abi_x86_32
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[fontconfig]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
@@ -18,39 +29,47 @@
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=media-libs/lcms-2.9 abi_x86_32
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[ldap]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=net-nds/openldap-2.4.48 abi_x86_32
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=media-sound/mpg123-1.25.10-r1 abi_x86_32
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[nls]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=sys-devel/gettext-0.20.1 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[png]
+# required by media-libs/freetype-2.9.1-r3::gentoo[png]
+# required by media-libs/fontconfig-2.13.0-r4::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[fontconfig]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=media-libs/libpng-1.6.37 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[ssl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=media-libs/libsdl2-2.0.10 haptic abi_x86_32
+# required by net-print/cups-2.2.13::gentoo[ssl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[cups]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=net-libs/gnutls-3.6.13 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[truetype]
+# required by media-libs/fontconfig-2.13.0-r4::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[fontconfig]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=media-libs/freetype-2.9.1-r3 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[udisks]
+# required by media-libs/libsdl2-2.0.10::gentoo[dbus]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=sys-apps/dbus-1.12.16 abi_x86_32
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[xcomposite]
-# 2 emerge --ask virtual/wine
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=x11-libs/libXcomposite-0.4.5 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[xinerama]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=x11-libs/libXinerama-1.1.4 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[xml]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=dev-libs/libxml2-2.9.9-r3 abi_x86_32
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[xml]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
@@ -59,35 +78,17 @@
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=app-emulation/wine-gecko-2.47-r1 abi_x86_32
+# required by dev-libs/libxslt-1.1.33-r1::gentoo[crypt]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[xml]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
->=media-libs/libsdl2-2.0.10 abi_x86_32 haptic
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[vkd3d]
+>=dev-libs/libgcrypt-1.8.5 abi_x86_32
+# required by dev-libs/libgcrypt-1.8.5::gentoo
+# required by dev-libs/libxslt-1.1.33-r1::gentoo[crypt]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[xml]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
->=app-emulation/vkd3d-1.1 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[vulkan]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=media-libs/vulkan-loader-1.1.125 abi_x86_32
-
-
->=x11-libs/xcb-util-wm-0.4.1-r2 abi_x86_32
-# required by x11-libs/xcb-util-image-0.4.0-r1::gentoo
-# required by x11-misc/picom-7.5-r1::gentoo
-# required by @selected
-# required by @world (argument)
->=x11-libs/xcb-util-cursor-0.1.3-r2 abi_x86_32
-# required by x11-libs/xcb-util-0.4.0-r1::gentoo
-# required by app-emulation/vkd3d-1.1::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[vkd3d]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=x11-libs/xcb-util-image-0.4.0-r1 abi_x86_32
-# required by x11-libs/xcb-util-0.4.0-r1::gentoo
-# required by x11-libs/xcb-util-image-0.4.0-r1::gentoo
-# required by x11-libs/xcb-util-cursor-0.1.3-r2::gentoo
->=x11-libs/xcb-util-renderutil-0.3.9-r2 abi_x86_32
+>=dev-libs/libgpg-error-1.36 abi_x86_32
 # required by media-libs/freetype-2.9.1-r3::gentoo[bzip2]
 # required by media-libs/fontconfig-2.13.0-r4::gentoo
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[fontconfig]
@@ -95,32 +96,47 @@
 # required by virtual/wine (argument)
 >=app-arch/bzip2-1.0.6-r11 abi_x86_32
 # required by net-libs/gnutls-3.6.13::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[ssl]
+# required by net-print/cups-2.2.13::gentoo[ssl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[cups]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=dev-libs/libtasn1-4.13 abi_x86_32
 # required by net-dns/libidn2-2.3.0::gentoo
 # required by net-libs/gnutls-3.6.13::gentoo[idn]
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[ssl]
+# required by net-print/cups-2.2.13::gentoo[ssl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[cups]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=dev-libs/libunistring-0.9.10 abi_x86_32
 # required by net-libs/gnutls-3.6.13::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[ssl]
+# required by net-print/cups-2.2.13::gentoo[ssl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[cups]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=dev-libs/nettle-3.4.1 abi_x86_32
 # required by dev-libs/nettle-3.4.1::gentoo[gmp]
 # required by net-libs/gnutls-3.6.13::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[ssl]
+# required by net-print/cups-2.2.13::gentoo[ssl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[cups]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=dev-libs/gmp-6.2.0-r1 abi_x86_32
 # required by net-libs/gnutls-3.6.13::gentoo[idn]
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[ssl]
+# required by net-print/cups-2.2.13::gentoo[ssl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[cups]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=net-dns/libidn2-2.3.0 abi_x86_32
+# required by net-nds/openldap-2.4.48::gentoo[-libressl,ssl,-gnutls]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[ldap]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=dev-libs/openssl-1.1.1d-r3 abi_x86_32
+# required by media-libs/lcms-2.9::gentoo[tiff]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[lcms]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=media-libs/tiff-4.1.0 abi_x86_32
 # required by media-libs/fontconfig-2.13.0-r4::gentoo
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[fontconfig]
 # required by virtual/wine-0-r7::gentoo
@@ -128,64 +144,46 @@
 >=sys-apps/util-linux-2.33.2 abi_x86_32
 # required by sys-devel/gettext-0.20.1::gentoo
 # required by sys-apps/util-linux-2.33.2::gentoo[nls]
-# required by virtual/eject-0-r1::gentoo
+# required by sys-libs/libblockdev-2.20-r2::gentoo
 # required by sys-fs/udisks-2.8.4::gentoo
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[udisks]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=virtual/libintl-0-r2 abi_x86_32
-# required by sys-devel/gettext-0.20.1::gentoo
-# required by sys-apps/util-linux-2.33.2::gentoo[nls]
-# required by virtual/eject-0-r1::gentoo
-# required by sys-fs/udisks-2.8.4::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[udisks]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=virtual/libiconv-0-r2 abi_x86_32
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[jpeg]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=virtual/jpeg-0-r3 abi_x86_32
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[opengl]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=virtual/glu-9.0-r2 abi_x86_32
 # required by virtual/jpeg-0-r3::gentoo
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[jpeg]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=media-libs/libjpeg-turbo-2.0.4 abi_x86_32
+# required by sys-devel/gettext-0.20.1::gentoo
+# required by sys-apps/util-linux-2.33.2::gentoo[nls]
+# required by sys-libs/libblockdev-2.20-r2::gentoo
+# required by sys-fs/udisks-2.8.4::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[udisks]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=virtual/libiconv-0-r2 abi_x86_32
+# required by media-libs/libsdl2-2.0.10::gentoo[opengl]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=virtual/glu-9.0-r2 abi_x86_32
+# required by media-libs/libsdl2-2.0.10::gentoo[udev]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
+# required by virtual/wine-0-r7::gentoo
+# required by virtual/wine (argument)
+>=virtual/libudev-232-r3 abi_x86_32
 # required by virtual/glu-9.0-r2::gentoo
 # required by app-emulation/wine-vanilla-4.0.2::gentoo[opengl]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
 >=media-libs/glu-9.0.1 abi_x86_32
-# required by sys-fs/udisks-2.8.4::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[udisks]
+# required by virtual/libudev-232-r3::gentoo[-systemd]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[udev]
 # required by virtual/wine-0-r7::gentoo
 # required by virtual/wine (argument)
->=sys-auth/consolekit-1.2.1 policykit
-# required by dev-libs/libxslt-1.1.33-r1::gentoo[crypt]
-# required by sys-auth/consolekit-1.2.1::gentoo
-# required by sys-auth/polkit-0.115-r4::gentoo[consolekit]
-# required by sys-fs/udisks-2.8.4::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[udisks]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=dev-libs/libgcrypt-1.8.5 abi_x86_32
-# required by dev-libs/libgcrypt-1.8.5::gentoo
-# required by dev-libs/libxslt-1.1.33-r1::gentoo[crypt]
-# required by sys-auth/consolekit-1.2.1::gentoo
-# required by sys-auth/polkit-0.115-r4::gentoo[consolekit]
-# required by sys-fs/udisks-2.8.4::gentoo
-# required by app-emulation/wine-vanilla-4.0.2::gentoo[udisks]
-# required by virtual/wine-0-r7::gentoo
-# required by virtual/wine (argument)
->=dev-libs/libgpg-error-1.36 abi_x86_32
-# required by x11-libs/xcb-util-image-0.4.0-r1::gentoo
-# required by x11-libs/xcb-util-cursor-0.1.3-r2::gentoo
->=x11-libs/xcb-util-0.4.0-r1 abi_x86_32
-# required by x11-libs/xcb-util-0.4.0-r1::gentoo
-# required by x11-libs/xcb-util-image-0.4.0-r1::gentoo
-# required by x11-libs/xcb-util-cursor-0.1.3-r2::gentoo
->=x11-libs/xcb-util-keysyms-0.4.0-r1 abi_x86_32
+>=sys-fs/eudev-3.2.9 abi_x86_32

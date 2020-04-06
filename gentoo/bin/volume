@@ -9,26 +9,26 @@ if [ "$1" = "up" ]; then
 	else
 		amixer sset 'Master' 100%
 	fi
-	ICON=/home/raech/.config/scripts/icons/volume.png
+	ICON=$HOME/.config/bin/icons/volume.png
 	si=
 elif [ "$1" = "down" ]; then
 	amixer sset 'Master' $STEP%-
-	ICON=/home/raech/.config/scripts/icons/down.png
+	ICON=$HOME/.config/bin/icons/down.png
 	si=
 
 elif [ "$1" = "toggle" ]; then
 	amixer sset 'Master' toggle
 	if [ "$MUTED" = "[on]" ]; then
-		ICON=/home/raech/.config/scripts/icons/volume.png
+		ICON=$HOME/.config/bin/icons/volume.png
 		si=
 	else
-		ICON=/home/raech/.config/scripts/icons/mute.png
+		ICON=$HOME/.config/bin/icons/mute.png
 		si=
 	fi
 fi
 volume=`(amixer sget Master | awk -F '[][]' '{gsub("%",""); print $2 }' | tail -n 1)`
 
-bar=$(/home/raech/.config/scripts/getprogressstring 10 "" "" ${volume})
+bar=$($HOME/.config/bin/getprogressstring 10 "" "" ${volume})
 echo $bar
 msgId="991049"
 

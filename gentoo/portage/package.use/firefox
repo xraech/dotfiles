@@ -1,7 +1,7 @@
-net-libs/nodejs -system-ssl -npm icu
-www-client/firefox -system-ssl -npm icu
->=media-libs/libpng-1.6.37 apng
+# required by www-client/firefox-68.6.0-r4::gentoo[system-libvpx]
+# required by firefox (argument)
 >=media-libs/libvpx-1.7.0-r1 postproc
+# required by www-client/firefox-68.6.0-r4::gentoo[system-sqlite]
+# required by firefox (argument)
 >=dev-db/sqlite-3.31.1 secure-delete
->=dev-lang/python-2.7.17-r1:2.7 sqlite ssl
->=dev-lang/python-3.7.7 sqlite ssl
+

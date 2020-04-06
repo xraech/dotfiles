@@ -1,54 +1,55 @@
-#!/bin/fish
+#!/bin/dash
 
 # Theme options
 
-set -l curr_theme (cat ~/.Xresources | grep themes | cut -d/ -f 6 | cut -d\" -f 1)
-set -l themes (ls ~/.config/themes | menu -p Themes:)
+curr_theme="$(cat $HOME/.Xresources | grep themes | cut -d/ -f 6 | cut -d\" -f 1)"
+themes="$(ls $HOME/.config/themes | menu -p Themes:)"
 
-sed -i 's/'$curr_theme'/'$themes'/' ~/.Xresources
-xrdb ~/.Xresources
+sed -i 's/'$curr_theme'/'$themes'/' $HOME/.Xresources
+xrdb "$HOME/.Xresources"
 
 
 # bspwm borders
-set -l bspwm "/home/raech/.config/bspwm/functions/borders"
+bspwm="$HOME/.config/bin/bspwm/borders"
 
-set -l inner1 (get_xres "color14" | sed 's/#/0x/')
-set -l inner2 (get_xres "foreground" | sed 's/#/0x/')
-set -l outer (get_xres "background" | sed 's/#/0x/')
+inner1=$(get_xres "color14" | sed 's/#/0x/')
+inner2=$(get_xres "foreground" | sed 's/#/0x/')
+outer=$(get_xres "background" | sed 's/#/0x/')
 
-set -l foreground (get_xres "foreground")
-set -l background (get_xres "background")
-set -l focused (get_xres "color14")
+foreground=$(get_xres "foreground")
+background=$(get_xres "background")
+focused=$(get_xres "color14")
+echo $inner1 $inner2 $outer $foreground $background $focused
 
-sed -i 's/inner1=.*/inner1=\''$inner1'\'/' $bspwm
-sed -i 's/inner2=.*/inner2=\''$inner2'\'/' $bspwm
-sed -i 's/outer=.*/outer=\''$outer'\'/' $bspwm
-sed -i '28s/".*/"'$background'\"/' "/home/raech/.config/bspwm/bspwmrc"
-sed -i '29s/".*/"'$background'\"/' "/home/raech/.config/bspwm/bspwmrc"
+sed -i "s/inner1=.*/inner1='$inner1'/" $bspwm
+sed -i "s/inner2=.*/inner2='$inner2'/" $bspwm
+sed -i "s/outer=.*/outer='$outer'/" $bspwm
+sed -i '28s/".*/"'$background'\"/' "$HOME/.config/bspwm/bspwmrc"
+sed -i '29s/".*/"'$background'\"/' "$HOME/.config/bspwm/bspwmrc"
 bspc config normal_border_color $background
 bspc config focused_border_color $background
 
 # Vim
 #if test $curr_theme = 'FlaredSky'
-#	sed -i '9s/set/"\ set/' ~/.vimrc
-#	sed -i '10s/colorscheme/"\ colorscheme/' ~/.vimrc
+#	sed -i '9s/set/"\ set/' $HOME/.vimrc
+#	sed -i '10s/colorscheme/"\ colorscheme/' $HOME/.vimrc
 #else
-#	sed -i '9s/"\ set/"set/' ~/.vimrc
-#	sed -i '10s/"\ colorscheme/"colorscheme/' ~/.vimrc
+#	sed -i '9s/"\ set/"set/' $HOME/.vimrc
+#	sed -i '10s/"\ colorscheme/"colorscheme/' $HOME/.vimrc
 #end
 
 # Dunst
-sed -i 's/background =.*/background = \"'$background'\"/' ~/.config/dunst/dunstrc
-sed -i 's/frame_color =.*/frame_color = \"'$focused'\"/' ~/.config/dunst/dunstrc
-sed -i 's/foreground =.*/foreground = \"'$foreground'\"/' ~/.config/dunst/dunstrc
+sed -i 's/background =.*/background = \"'$background'\"/' $HOME/.config/dunst/dunstrc
+sed -i 's/frame_color =.*/frame_color = \"'$focused'\"/' $HOME/.config/dunst/dunstrc
+sed -i 's/foreground =.*/foreground = \"'$foreground'\"/' $HOME/.config/dunst/dunstrc
 # urgency critical, invert colors
-sed -i '60s/background =.*/background = \"'$foreground'\"/' ~/.config/dunst/dunstrc
-sed -i '61s/foreground =.*/foreground = \"'$background'\"/' ~/.config/dunst/dunstrc
+sed -i '60s/background =.*/background = \"'$foreground'\"/' $HOME/.config/dunst/dunstrc
+sed -i '61s/foreground =.*/foreground = \"'$background'\"/' $HOME/.config/dunst/dunstrc
 
 # GTK theme
-sed -i '2s/=.*/='$themes'/' ~/.config/gtk-3.0/settings.ini
-sed -i '5s/=.*/=\"'$themes'\"/' ~/.gtkrc-2.0
+sed -i '2s/=.*/='$themes'/' $HOME/.config/gtk-3.0/settings.ini
+sed -i '5s/=.*/=\"'$themes'\"/' $HOME/.gtkrc-2.0
 
 # Disable & Enable programs
-pkill -9 dunst; dunst &
-pkill -9 borders; exec ~/.config/bspwm/functions/borders &
+pkill -9 dunst && dunst &
+pkill -9 borders && exec borders &

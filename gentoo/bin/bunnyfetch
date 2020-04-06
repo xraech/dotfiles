@@ -24,7 +24,8 @@ h=
 wmname="$(xprop -id $(xprop -root -notype | awk '$1=="_NET_SUPPORTING_WM_CHECK:"{print $5}') -notype -f _NET_WM_NAME 8t | grep "WM_NAME" | cut -f2 -d \")"
 
 k=
-kernel="$(uname -r | cut -d '-' -f1)"
+#kernel="$(uname -r | cut -d '-' -f1)"
+kernel="$(uname -r | sed 's/gentoo//')"
 
 r=
 resolution="$(xwininfo -root | grep geometry | awk '{print $2}' | cut -d + -f1)"
@@ -48,10 +49,9 @@ mres="$memfree/$memused"
 tput clear
 cat << EOF
 
-             $d$f1$h  $t$wmname
-   (\ /)     $f3$k  $t$kernel
-   ( $d. .$t)    $f2$sh  $t$shell
-   c($f1"$t)($f1"$t)   $f5$r  $t$resolution
-             $f4$w  $t$pkgcount
-		$d$mres
+             $d$f1$h  $t$kernel
+   (\ /)     $f3$k  $t$shell
+   ( $d. .$t)    $f2$sh  $t$resolution
+   c($f1"$t)($f1"$t)   $f5$r  $t$pkgcount
+             $f4$w  $t$mres
 EOF
