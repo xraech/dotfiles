@@ -1,0 +1,7 @@
+-U => --changed-use
+-D => --deep
+-N => --newuse
+-u => --update
+-a => --ask
+-v => --verbose
+

@@ -1,0 +1,5 @@
+app-i18n/fcitx gtk2
+app-i18n/mozc fcitx4
+app-text/texlive cjk xetex
+app-text/texlive-core cjk xetex
+>=media-libs/gd-2.2.5-r2 fontconfig
