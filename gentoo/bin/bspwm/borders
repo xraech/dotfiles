@@ -3,9 +3,9 @@
 #   double borders
 #
 
-outer='0x282828'
-inner1='0x8ec07c'
-inner2='0xebdbb2'
+outer='0x100F10'
+inner1='0x9E9A99'
+inner2='0xE4D0CA'
 
 draw() { chwb2 -I "$i" -O "$o" -i "2" -o "8" $@ 2> /dev/null; }
 

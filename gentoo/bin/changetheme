@@ -3,7 +3,8 @@
 # Theme options
 
 curr_theme="$(cat $HOME/.Xresources | grep themes | cut -d/ -f 6 | cut -d\" -f 1)"
-themes="$(ls $HOME/.config/themes | menu -p Themes:)"
+echo $curr_theme
+themes="$(ls $HOME/.config/themes/ | menu -p Themes:)"
 
 sed -i 's/'$curr_theme'/'$themes'/' $HOME/.Xresources
 xrdb "$HOME/.Xresources"
@@ -18,14 +19,13 @@ outer=$(get_xres "background" | sed 's/#/0x/')
 
 foreground=$(get_xres "foreground")
 background=$(get_xres "background")
-focused=$(get_xres "color14")
-echo $inner1 $inner2 $outer $foreground $background $focused
+focused=$(get_xres "color1")
 
 sed -i "s/inner1=.*/inner1='$inner1'/" $bspwm
 sed -i "s/inner2=.*/inner2='$inner2'/" $bspwm
 sed -i "s/outer=.*/outer='$outer'/" $bspwm
-sed -i '28s/".*/"'$background'\"/' "$HOME/.config/bspwm/bspwmrc"
-sed -i '29s/".*/"'$background'\"/' "$HOME/.config/bspwm/bspwmrc"
+sed -i '28s/".*/"'$foreground'\"/' "$HOME/.config/bspwm/bspwmrc"
+sed -i '29s/".*/"'$focused'\"/' "$HOME/.config/bspwm/bspwmrc"
 bspc config normal_border_color $background
 bspc config focused_border_color $background
 
@@ -37,6 +37,12 @@ bspc config focused_border_color $background
 #	sed -i '9s/"\ set/"set/' $HOME/.vimrc
 #	sed -i '10s/"\ colorscheme/"colorscheme/' $HOME/.vimrc
 #end
+
+# Icons
+icon_path=$HOME/.config/bin/icons
+for f in $icon_path/*.svg; do
+    sed -i "s/:#....../:'$focused'/g" $f
+done
 
 # Dunst
 sed -i 's/background =.*/background = \"'$background'\"/' $HOME/.config/dunst/dunstrc
@@ -52,4 +58,8 @@ sed -i '5s/=.*/=\"'$themes'\"/' $HOME/.gtkrc-2.0
 
 # Disable & Enable programs
 pkill -9 dunst && dunst &
-pkill -9 borders && exec borders &
+bspc config normal_border_color $foreground
+bspc config focused_border_color $focused
+# pkill -9 borders && exec borders &
+
+# vim: set ft=sh :
