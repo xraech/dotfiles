@@ -10,10 +10,17 @@ def terminal_command(cmd):
 
 def read_theme(theme):
     clist = []
+    aux = []
     with open(theme, "r") as fi:
         for line in fi:
             if "color" in line:
-                clist.append(line.split(":")[1].strip(" \n").replace("#","0x"))
+                exclude = int(line.split(":")[0].strip("*.color"))
+                if exclude >= 8:
+                    aux.append(line.split(":")[1].strip(" \n").replace("#","0x"))
+                else:
+                    clist.append(line.split(":")[1].strip(" \n").replace("#","0x"))
+    for i in aux:
+        clist.append(i)
     return clist
 
 def hex_to_rgb(color):
@@ -48,7 +55,10 @@ def print_to_clipboard(clist):
                 
 
 def Main():
-    colors = read_theme(sys.argv[1])
+    if len(sys.argv) <= 3:
+        colors = read_theme("/home/xendak/.config/themes/"+sys.argv[1])
+    else:
+        colors = read_theme(sys.argv[1])
     clist = (gtk_rgba_list(colors))
 
     print_to_clipboard(clist)

@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/xendak/.vim'
+let g:netrw_dirhist_0='/home/xendak/Fell Seal/customdata'
+let g:netrw_dirhist_9='/home/xendak/Downloads/languages'
+let g:netrw_dirhist_8='/home/xendak/.icons/default'
+let g:netrw_dirhist_7='/home/xendak'
+let g:netrw_dirhist_6='/home/xendak/Downloads/Mods/keyboard/xkb-data_mod/xkb'
+let g:netrw_dirhist_5='/home/xendak/.config'
+let g:netrw_dirhist_4='/home/xendak/.config/sxhkd'
+let g:netrw_dirhist_3='/home/xendak/.config'
+let g:netrw_dirhist_2='/home/xendak/.config/sxhkd'

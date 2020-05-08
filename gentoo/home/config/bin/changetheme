@@ -1,0 +1,79 @@
+#!/bin/dash
+
+# Theme options
+
+curr_theme="$(cat $HOME/.Xresources | grep themes | cut -d/ -f 6 | cut -d\" -f 1)"
+echo "current theme" $curr_theme
+themes="$(ls $HOME/.config/themes/ | menu -p Themes:)"
+
+if [ "$themes" = "gray" ]; then
+    gtk_theme="nord"
+elif [ "$themes" = "matrix" ]; then
+    gtk_theme="nord"
+else
+    gtk_theme=$themes
+fi
+
+echo "new theme" $themes
+echo "gtk theme" $gtk_theme
+sed -i 's/'$curr_theme'/'$themes'/' $HOME/.Xresources
+xrdb "$HOME/.Xresources"
+
+
+# bspwm borders
+bspwm="$HOME/.config/bin/bspwm/borders"
+
+inner1=$(get_xres "color14" | sed 's/#/0x/')
+inner2=$(get_xres "foreground" | sed 's/#/0x/')
+outer=$(get_xres "background" | sed 's/#/0x/')
+
+foreground=$(get_xres "foreground")
+background=$(get_xres "background")
+focused=$(get_xres "color1")
+
+sed -i "s/inner1=.*/inner1='$inner1'/" $bspwm
+sed -i "s/inner2=.*/inner2='$inner2'/" $bspwm
+sed -i "s/outer=.*/outer='$outer'/" $bspwm
+sed -i '28s/".*/"'$background'\"/' "$HOME/.config/bspwm/bspwmrc"
+sed -i '29s/".*/"'$foreground'\"/' "$HOME/.config/bspwm/bspwmrc"
+
+# Vim
+if test "$themes" = "sephia"; then
+    sed -i '17s/.*/    \"set termguicolors/' $HOME/.vimrc
+    sed -i '18s/.*/    \"colo noctu/' $HOME/.vimrc
+elif test "$themes" = "nord"; then
+    sed -i '17s/.*/    set termguicolors/' $HOME/.vimrc
+    sed -i '18s/.*/    colo nord/' $HOME/.vimrc
+elif test "$themes" = "matrix"; then
+    sed -i '17s/.*/    set termguicolors/' $HOME/.vimrc
+    sed -i '18s/.*/    colo matrix/' $HOME/.vimrc
+else
+    sed -i '17s/.*/    \"set termguicolors/' $HOME/.vimrc
+    sed -i '18s/.*/    colo dim/' $HOME/.vimrc
+fi
+
+# Icons
+icon_path=$HOME/.config/bin/icons
+for f in $icon_path/*.svg; do
+    sed -i "s/:'#......'/:'$foreground'/g" $f
+done
+
+# Dunst
+sed -i 's/background =.*/background = \"'$background'\"/' $HOME/.config/dunst/dunstrc
+sed -i 's/frame_color =.*/frame_color = \"'$foreground'\"/' $HOME/.config/dunst/dunstrc
+sed -i 's/foreground =.*/foreground = \"'$foreground'\"/' $HOME/.config/dunst/dunstrc
+# urgency critical, invert colors
+sed -i '60s/background =.*/background = \"'$foreground'\"/' $HOME/.config/dunst/dunstrc
+sed -i '61s/foreground =.*/foreground = \"'$background'\"/' $HOME/.config/dunst/dunstrc
+
+# GTK theme
+sed -i '2s/=.*/='$gtk_theme'/' $HOME/.config/gtk-3.0/settings.ini
+sed -i '5s/=.*/=\"'$gtk_theme'\"/' $HOME/.gtkrc-2.0
+
+# Disable & Enable programs
+pkill -9 dunst && dunst &
+bspc config normal_border_color $background
+bspc config focused_border_color $foreground
+# pkill -9 borders && exec borders &
+
+# vim: set ft=sh :

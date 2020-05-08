@@ -1,0 +1,127 @@
+#==============================================================================#
+#------------------------------------------------------------------------------#
+# Terminal
+super + shift + Return
+	$HOME/Downloads/git/sakura/src/sakura
+super + Return
+	st
+
+# Launch application menu
+super + r
+	$HOME/.config/bin/menu run -bw 2
+
+# Useful Apps
+alt + shift + e
+	gvim
+alt + w
+	firefox
+alt + m
+	discord
+alt + p
+	gcolor2
+alt + t
+	$HOME/.config/bin/xclock
+
+alt + shift + Print
+	$HOME/.config/bin/screenshot.sh -c
+shift + Print
+	$HOME/.config/bin/screenshot.sh -s
+Print
+	$HOME/.config/bin/screenshot.sh
+super + period
+	mpc volume +5
+super + comma
+	mpc volume -5
+
+# Reload Mouse Scroll
+alt + shift + Escape
+	pkill -9 imwheel; imwheel -b 45;notify-send 'Restarted Mouse Scrolling' --urgency low
+
+# sxhkd Reload
+alt + Escape
+	pkill -USR1 -x sxhkd;notify-send 'Restarted SXHKD' --urgency low
+    
+alt + shift + d
+	pkill -9 dunst; dunst 
+# Rotate Vertical/Horizontal
+alt + {_, shift + }v
+	bspc node @/ --rotate {90,-90}
+
+# Layers
+alt + f
+	$HOME/.config/bin/bspwm/movelayer.sh
+
+# Monocle Mode
+super + m
+	bspc desktop -l next
+
+# Node State
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Node Next
+super + Tab
+	bspc node -f next.local
+
+# Node Focus
+super + {_,shift + }{h,j,k,l}
+	 bspc node -{f,s} {west,south,north,east} #&& $HOME/.config/bin/fade_border &
+
+super + {_,shift + }{Left,Down,Up,Right}
+	 bspc node -{f,s} {west,south,north,east} #&& $HOME/.config/bin/fade_border &
+
+# Node send to Desktop
+super + {_,shift + }{1-9}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+# Node Kill
+super + q
+#add remove monocle to avoid one issue
+	bspc node -c
+
+# Next/Previous Desktop
+super + bracket{left,right}
+	bspc desktop -f {prev,next}.local
+
+# Media Keys
+XF86KbdBrightnessUp
+	$HOME/.config/bin/kbdbrightness up
+XF86KbdBrightnessDown
+	$HOME/.config/bin/kbdbrightness down
+XF86MonBrightnessUp
+	$HOME/.config/bin/brightness inc
+XF86MonBrightnessDown
+	$HOME/.config/bin/brightness dec
+XF86AudioMute
+	$HOME/.config/bin/volume toggle
+XF86AudioNext
+	$HOME/.config/bin/controlmusic next
+XF86AudioPause
+	$HOME/.config/bin/controlmusic toggle
+XF86AudioPlay
+	$HOME/.config/bin/controlmusic toggle
+XF86AudioPrev
+	$HOME/.config/bin/controlmusic prev
+XF86AudioLowerVolume
+	$HOME/.config/bin/volume down
+XF86AudioRaiseVolume 
+	$HOME/.config/bin/volume up
+
+#==============================================================================#
+#------------------------------------------------------------------------------#
+# float/tile resize
+
+# expand a window by moving one of its side outward
+super + ctrl + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + ctrl + shift + {h,j,k,l}
+	bspc node -v {-50 0,0 50,0 -50,50 0}
+
+#==============================================================================#
+#------------------------------------------------------------------------------#
+
+# bspwm Quit
+super + shift + q
+	bspc quit

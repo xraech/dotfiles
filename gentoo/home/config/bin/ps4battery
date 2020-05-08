@@ -1,0 +1,46 @@
+#!/bin/dash
+# ps4 battery display
+if ls /sys/class/power_supply/sony* 1> /dev/null 2>&1; then
+    bat="$(cat /sys/class/power_supply/sony_controller_battery_1c:a0:b8:b2:ee:c9/present)"
+    #cap="$(cat /sys/class/power_supply/sony_controller_battery_1c:a0:b8:b2:ee:c9/capacity)"
+    sta="$(cat /sys/class/power_supply/sony_controller_battery_1c:a0:b8:b2:ee:c9/status)"
+    bat=$(($bat * 100))
+
+    bar=$($HOME/.config/bin/getprogressstring 10 "" "" ${bat})
+
+    if [ $sta = "Charging" ]; then
+	if   [ "$bat" -ge "100" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-100-charging.svg
+	elif [ "$bat" -lt "100" ] && [ "$bat" -ge "80" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-080-charging.svg
+	elif [ "$bat" -le "79" ] && [ "$bat" -ge "60" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-060-charging.svg
+	elif [ "$bat" -le "59" ] && [ "$bat" -ge "40" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-040-charging.svg
+	elif [ "$bat" -le "39" ] && [ "$bat" -ge "20" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-020-charging.svg
+	elif [ "$bat" -le "19" ] && [ "$bat" -ge "0" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-000-charging.svg
+	fi
+    else
+	if   [ "$bat" -ge "100" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-100.svg
+	elif [ "$bat" -lt "100" ] && [ "$bat" -ge "80" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-080.svg
+	elif [ "$bat" -le "79" ] && [ "$bat" -ge "60" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-060.svg
+	elif [ "$bat" -le "59" ] && [ "$bat" -ge "40" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-040.svg
+	elif [ "$bat" -le "39" ] && [ "$bat" -ge "20" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-020.svg
+	elif [ "$bat" -le "19" ] && [ "$bat" -ge "0" ]; then
+	    ICON=$HOME/.config/bin/icons/battery-000.svg
+	fi
+    fi
+    notify-send -h string:x-canonical-private-synchronous:anything "Controller Status" -u low -i $ICON "${bat}%"
+else
+    ICON=$HOME/.config/bin/icons/power-disconnected.svg
+    notify-send -h string:x-canonical-private-synchronous:anything -u low -i $ICON "PS4 Controller is not connected."
+fi
+
+
