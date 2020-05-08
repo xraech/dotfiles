@@ -1,1 +1,1 @@
-app-portage/layman sync-plugin-portage git
+app-portage/layman sync-plugin-portage git python_targets_python3_6
