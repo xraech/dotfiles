@@ -1,0 +1,13 @@
+# required by www-client/firefox-68.6.0-r4::gentoo[system-libvpx]
+# required by firefox (argument)
+>=media-libs/libvpx-1.7.0-r1 postproc
+# required by www-client/firefox-68.6.0-r4::gentoo[system-sqlite]
+# required by firefox (argument)
+>=dev-db/sqlite-3.31.1 secure-delete
+
+>=www-client/firefox-68.6.0-r4 clang lto pgo
+
+# required by www-client/firefox-68.8.0::gentoo[clang]
+>=x11-base/xorg-server-1.20.7 xvfb
+>=sys-devel/llvm-9.0.1 gold
+#

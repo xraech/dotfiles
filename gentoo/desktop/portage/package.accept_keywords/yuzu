@@ -1,0 +1,6 @@
+# Installs \/
+# dev-cpp/catch
+# libz4
+=dev-cpp/nlohmann_json-3.7.0 **
+=dev-libs/libfmt-6.2.0-r1 **
+=dev-cpp/catch-9999 **

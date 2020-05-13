@@ -1,0 +1,3 @@
+games-util/steam-launcher steamruntime abi_x86_32
+>=sys-libs/ncurses-6.1_p20190609 -gpm
+
