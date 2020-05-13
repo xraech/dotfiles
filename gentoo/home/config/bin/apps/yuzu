@@ -1,3 +1,0 @@
-#!/bin/dash
-#yuzu& bspc node $(xdo id -m -p $!) -t fullscreen 
-/home/xendak/Games/Switch/yuzu-src/build/bin/yuzu & bspc node $(xdo id -m -p $!) -t fullscreen

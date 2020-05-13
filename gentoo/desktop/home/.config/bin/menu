@@ -1,0 +1,28 @@
+#!/bin/dash
+
+#colors="-nb #ede1d4 -nf #423F3D -sb #423f3d -sf #f4ede6" 
+#colors="-nf #3c3828 -nb #d4ceb5 -sf #d4ceb5 -sb #3c3828"
+xresFG=`get_xres foreground`
+xresBG=`get_xres background`
+menuC=`get_xres color1`
+# old menuC #434d6a
+#fonts=$(sed -n '3,3p' ~/.Xresources | sed s/st.font:\t\t\t//)
+fonts=`get_xres font`
+colors="-nf $xresFG -nb $xresBG -sf $xresBG -sb $menuC -bb $xresFG"
+
+res=$(xrandr --nograb --current | awk '/\*/ {print $1}' | tail -n 1)
+res=${res% *}
+sw=${res%x*}
+sh=${res#*x}
+sw=${sw%.*}
+sh=${sh%.*}
+
+w=$((sw / 2))
+x=$((sw / 2 - w / 2))
+y=$((sh / 5))
+h=$((sh / 150))
+
+[ "$1" = "run" ] &&
+	{ shift ; _run=_run ; }
+
+dmenu${_run} -bw 2 -fn "$fonts" -f -l $h $colors -x $x -y $y -wi $w "$@"

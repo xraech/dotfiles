@@ -1,0 +1,81 @@
+#! /bin/bash
+gap=20
+PANEL_HEIGHT=0
+export gap
+export PANEL_HEIGHT
+
+_() { bspc config "$@"; }
+
+#This creates negative padding equal to window gap so that gaps are shown only between windows and not on desktop edges.
+_ window_gap $gap;
+_ top_padding -$gap
+_ left_padding -$gap
+_ right_padding -$gap
+_ bottom_padding -$gap
+
+_ top_padding 0
+_ left_padding 0
+_ right_padding 0
+_ bottom_padding 0
+
+# Various settings
+_ gapless_monocle     true #Default setup uses negative padding, and gapless monocle looks really weird like that
+_ borderless_monocle  true
+_ single_monocle true
+_ paddingless_monocle false
+
+# Color settings
+_ normal_border_color       "#1D1D1D"
+_ focused_border_color      "#7b745b"
+_ presel_feedback_color 	"#1ABB9B"
+_ active_border_color		"#ede1d4"
+
+_ border_width 2
+
+_ pointer_modifier			mod4
+_ pointer_action1			move
+_ pointer_action2			resize_side
+_ pointer_action3			resize_corner
+_ click_to_focus			true
+#_ pointer_follows_focus true #Some keybindings automatically enable and disable this setting
+
+#Settings for manual splitting
+_ split_ratio         0.52
+
+#bspc monitor -d i ii iii iv v vi vii viii ix x
+#bspc monitor -d One Two Three Four Five Six Seven Eight Nine Ten
+#bspc monitor -d I II III IV V VI VII VIII IX X
+#bspc monitor -d • • • • • • • • • •
+bspc monitor -d I II III IV V
+
+###This creates and names desktops for multiple monitors.
+#workspaces_multimonitor &
+
+bspc rule -a gcolor2			state=floating center=true
+bspc rule -a Lxappearance		state=floating center=true
+bspc rule -a file-roller		state=floating center=true
+bspc rule -a floaterm			state=floating center=true
+bspc rule -a Steam	desktop='^4'	split_dir=right follow=off state=floating
+bspc rule -a steam	desktop='^4'	state=floating
+bspc rule -a '*.exe'	desktop='^5'	state=floating follow=on
+bspc rule -a Lutris	desktop='^4'	split_dir=right follow=off
+bspc rule -a '*yuzu*'	desktop='^5'	state=fullscreen follow=on
+bspc rule -a firefox	desktop='^2'
+bspc rule -a Firefox	desktop='^2'
+bspc rule -a deluge			state=floating center=true
+bspc rule -a discord	desktop='^3'	follow=off
+bspc rule -a Discord	desktop='^3'	follow=off
+bspc rule -a StardewModdingAPI.bin.x86_64 desktop='^5' follow=on state=fullscreen
+#bspc rule -a wpa_gui state=pseudo_tiled
+#bspc rule -a libreoffice state=tiled
+#bspc rule -a '*:libreofficedev' state=tiled
+#bspc rule -a '*:soffice' state=tiled
+#bspc rule -a 9menu border=off manage=off
+#bspc rule -a tint2 border=off manage=off
+#bspc desktop I --layout monocle
+#bspc desktop II --layout monocle
+
+/home/xendak/Documents/Installed/picom &
+
+#borders &
+sxhkd &

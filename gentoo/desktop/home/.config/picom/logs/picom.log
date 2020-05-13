@@ -1,0 +1,506 @@
+[ 04/29/2020 16:34:35.818 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 739)
+[ 04/29/2020 16:34:35.818 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:35:07.467 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 736)
+[ 04/29/2020 16:35:07.467 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:36:05.263 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 744)
+[ 04/29/2020 16:36:05.263 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:43:58.311 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 709)
+[ 04/29/2020 16:43:58.311 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:44:20.057 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 713)
+[ 04/29/2020 16:44:20.057 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:44:22.127 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 720)
+[ 04/29/2020 16:44:22.127 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:44:33.265 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 2226)
+[ 04/29/2020 16:44:33.265 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:47:32.036 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 2242)
+[ 04/29/2020 16:47:32.036 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:49:50.567 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 2262)
+[ 04/29/2020 16:49:50.567 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:50:14.852 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 728)
+[ 04/29/2020 16:50:14.852 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:50:50.267 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 740)
+[ 04/29/2020 16:50:50.267 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:55:57.974 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 774)
+[ 04/29/2020 16:55:57.974 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 16:56:26.720 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 771)
+[ 04/29/2020 16:56:26.720 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 19:00:40.431 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 04/29/2020 19:00:40.431 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 21:28:10.442 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/29/2020 21:28:10.443 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 21:34:45.465 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 04/29/2020 21:34:45.465 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 22:51:34.788 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 04/29/2020 23:07:31.507 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/29/2020 23:07:31.507 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 23:21:40.151 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/29/2020 23:21:40.151 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/29/2020 23:38:48.906 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/29/2020 23:38:48.906 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/30/2020 00:17:17.071 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 04/30/2020 00:17:49.998 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/30/2020 00:17:49.998 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/30/2020 01:00:02.567 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 04/30/2020 07:30:37.735 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/30/2020 07:30:37.736 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/30/2020 09:28:20.272 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/30/2020 09:28:20.272 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/30/2020 10:39:09.709 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 04/30/2020 10:39:46.168 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/30/2020 10:39:46.169 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/30/2020 12:02:00.783 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 04/30/2020 12:02:00.784 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/30/2020 18:18:19.844 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/30/2020 18:18:19.844 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 04/30/2020 18:34:54.556 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 04/30/2020 18:35:42.894 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 04/30/2020 18:35:42.894 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 09:22:18.839 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/01/2020 09:22:18.839 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 10:36:51.587 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/01/2020 10:36:51.588 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 17:20:00.847 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/01/2020 17:20:54.481 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/01/2020 17:20:54.482 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 18:24:14.190 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:24:14.190 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:24:14.239 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:24:14.239 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:24:14.303 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:24:14.303 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:29:12.166 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/01/2020 18:29:12.166 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 18:30:09.920 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/01/2020 18:30:09.920 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 18:32:18.134 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/01/2020 18:32:18.134 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 18:32:40.246 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:32:52.724 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/01/2020 18:40:23.029 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/01/2020 18:40:23.029 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 18:50:39.868 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/01/2020 18:50:39.868 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/01/2020 19:04:29.877 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/01/2020 19:04:29.878 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 07:47:03.959 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 180)
+[ 05/02/2020 07:47:03.959 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 22:35:58.252 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/02/2020 22:35:58.253 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 23:08:04.272 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/02/2020 23:08:04.272 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/02/2020 23:14:51.847 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/02/2020 23:14:51.847 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 23:21:17.092 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/02/2020 23:21:17.092 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 23:26:37.118 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/02/2020 23:26:37.118 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 23:34:19.314 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/02/2020 23:34:19.315 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 23:57:33.208 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/02/2020 23:57:33.208 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/02/2020 23:58:48.382 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/02/2020 23:58:48.383 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/03/2020 00:16:00.181 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/03/2020 00:19:07.842 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/03/2020 00:19:07.842 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/03/2020 00:37:09.152 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/03/2020 00:37:09.152 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/03/2020 01:07:54.775 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/03/2020 01:08:44.669 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/03/2020 01:08:44.669 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/03/2020 16:24:01.684 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/03/2020 16:24:01.685 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/03/2020 20:43:11.534 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/03/2020 20:43:11.534 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/03/2020 20:44:05.828 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:05.828 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:05.882 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:05.882 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:07.059 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:07.059 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:08.524 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:08.527 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:10.032 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:10.032 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:11.569 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 20:44:11.569 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/03/2020 21:48:29.059 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/03/2020 21:48:29.059 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/04/2020 09:15:43.230 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/04/2020 09:15:43.230 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/05/2020 07:00:48.739 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/05/2020 07:00:48.739 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 00:46:50.838 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/06/2020 00:46:50.838 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 00:47:05.954 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/06/2020 00:47:05.954 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 00:47:15.087 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/06/2020 00:47:16.953 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/06/2020 00:47:16.953 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 09:50:41.166 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/06/2020 09:50:41.166 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 11:44:12.130 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/06/2020 11:44:12.131 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 16:55:26.804 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 174)
+[ 05/06/2020 16:55:26.804 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 16:55:49.760 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/06/2020 16:55:51.563 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/06/2020 16:55:51.563 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 20:05:20.261 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 590)
+[ 05/06/2020 20:05:20.261 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 20:05:42.223 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 588)
+[ 05/06/2020 20:05:42.223 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 20:05:49.867 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 579)
+[ 05/06/2020 20:05:49.867 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 20:15:54.771 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 575)
+[ 05/06/2020 20:15:54.771 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 20:20:44.682 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 166)
+[ 05/06/2020 20:20:44.682 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 20:25:19.906 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/06/2020 20:25:19.906 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/06/2020 21:29:31.502 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/06/2020 21:29:31.502 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/07/2020 07:22:52.803 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/07/2020 07:22:52.803 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/07/2020 10:07:06.287 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 478)
+[ 05/07/2020 10:07:06.287 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/07/2020 15:42:11.151 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/07/2020 15:42:11.151 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 12:12:55.810 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/08/2020 12:12:55.811 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 16:32:34.188 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/08/2020 16:33:23.810 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/08/2020 16:33:23.810 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 16:59:37.880 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/08/2020 17:01:30.166 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/08/2020 17:01:30.166 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 17:05:28.852 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/08/2020 17:05:28.852 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 17:06:39.808 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 177)
+[ 05/08/2020 17:06:39.808 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 17:11:35.639 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/08/2020 17:11:37.411 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/08/2020 17:11:37.411 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 17:12:37.391 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/08/2020 17:12:39.155 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 171)
+[ 05/08/2020 17:12:39.155 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 17:13:40.306 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/08/2020 17:13:42.032 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/08/2020 17:13:42.032 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 17:16:21.777 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/08/2020 17:16:21.777 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/08/2020 17:43:35.393 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.393 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.393 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.394 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.394 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.394 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.394 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.407 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.407 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.407 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.407 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.407 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.407 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.407 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.443 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.443 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.443 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.443 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.443 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.443 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:35.443 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.280 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.280 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.280 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.281 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.301 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.301 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.301 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.302 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.302 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.302 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.302 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.333 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.333 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.333 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.334 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.334 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.334 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:41.334 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.610 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.611 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.611 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.611 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.611 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.611 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.611 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.621 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.621 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.622 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.622 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.624 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.624 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.624 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.632 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.632 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.632 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.632 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.632 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.632 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.632 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.660 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.660 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.660 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.660 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.660 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.660 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 17:43:49.660 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/08/2020 18:38:31.005 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 167)
+[ 05/08/2020 18:38:31.006 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/10/2020 15:05:01.143 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/10/2020 15:05:01.143 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/10/2020 16:33:53.765 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/10/2020 16:33:53.766 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/10/2020 19:49:23.145 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/10/2020 19:49:23.146 _gl_compose ERROR ] GLX error at line 462: GL_INVALID_OPERATION
+[ 05/10/2020 22:33:16.631 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/10/2020 22:33:16.631 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/10/2020 23:10:30.690 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/10/2020 23:10:30.690 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/10/2020 23:43:55.574 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/10/2020 23:43:55.575 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/10/2020 23:52:48.342 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/10/2020 23:52:50.111 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/10/2020 23:52:50.111 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/10/2020 23:53:49.748 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/10/2020 23:53:49.748 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:13:06.500 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 580)
+[ 05/11/2020 00:13:06.500 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:14:48.213 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 578)
+[ 05/11/2020 00:14:48.213 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:15:10.061 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 586)
+[ 05/11/2020 00:15:10.061 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:15:43.746 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 610)
+[ 05/11/2020 00:15:43.746 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:15:58.961 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 586)
+[ 05/11/2020 00:15:58.961 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:16:15.692 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 632)
+[ 05/11/2020 00:16:15.692 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:16:17.307 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 632)
+[ 05/11/2020 00:16:17.307 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:16:32.065 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 628)
+[ 05/11/2020 00:16:32.065 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:17:01.372 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 628)
+[ 05/11/2020 00:17:01.372 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:19:41.592 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 636)
+[ 05/11/2020 00:19:41.592 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 00:19:45.968 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 636)
+[ 05/11/2020 00:19:45.968 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 02:36:30.448 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/11/2020 12:00:25.902 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/11/2020 12:00:25.903 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 12:05:41.063 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 441)
+[ 05/11/2020 12:05:41.063 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 12:08:41.642 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 447)
+[ 05/11/2020 12:08:41.642 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 12:08:57.917 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 423)
+[ 05/11/2020 12:08:57.917 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 12:09:25.151 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 451)
+[ 05/11/2020 12:09:25.151 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 12:28:55.771 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 412)
+[ 05/11/2020 12:28:55.771 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 12:51:50.908 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 170)
+[ 05/11/2020 12:51:50.908 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 18:32:47.580 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 414)
+[ 05/11/2020 18:32:47.580 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 18:36:15.691 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 426)
+[ 05/11/2020 18:36:15.691 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 18:36:37.418 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 428)
+[ 05/11/2020 18:36:37.418 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 19:37:15.308 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 441)
+[ 05/11/2020 19:37:15.308 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 19:37:41.600 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 441)
+[ 05/11/2020 19:37:41.600 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 19:38:01.373 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 469)
+[ 05/11/2020 19:38:01.373 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:04:09.542 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 370)
+[ 05/11/2020 20:04:09.542 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:05:54.781 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 346)
+[ 05/11/2020 20:05:54.781 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:06:20.078 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 366)
+[ 05/11/2020 20:06:20.078 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:06:55.983 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 346)
+[ 05/11/2020 20:06:55.983 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:07:06.703 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 313)
+[ 05/11/2020 20:07:06.703 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:07:27.593 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 343)
+[ 05/11/2020 20:07:27.593 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:07:40.710 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 374)
+[ 05/11/2020 20:07:40.710 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:23:08.957 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 376)
+[ 05/11/2020 20:23:08.957 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:23:20.230 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 344)
+[ 05/11/2020 20:23:20.230 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:23:45.929 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 331)
+[ 05/11/2020 20:23:45.929 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:24:19.256 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 322)
+[ 05/11/2020 20:24:19.256 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:24:43.099 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 328)
+[ 05/11/2020 20:24:43.099 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:24:58.871 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 332)
+[ 05/11/2020 20:24:58.871 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:25:08.291 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 349)
+[ 05/11/2020 20:25:08.291 paint_all_new ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:28:21.894 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1922)
+[ 05/11/2020 20:28:21.894 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 20:28:45.775 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1895)
+[ 05/11/2020 20:28:45.775 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/11/2020 21:37:16.837 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.837 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.837 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.841 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.841 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.841 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.846 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.846 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.846 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.859 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.859 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.859 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.868 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.868 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.868 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.879 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.879 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.879 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.888 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.888 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.888 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.895 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.895 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.895 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.902 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.902 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.902 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/11/2020 21:37:16.909 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0161c24d.
+[ 05/11/2020 21:37:16.909 paint_one ERROR ] Failed to bind texture for window 0x02800005.
+[ 05/11/2020 21:37:16.909 paint_one ERROR ] Window 0x02800005 is missing painting data.
+[ 05/12/2020 07:00:58.468 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 07:00:58.468 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:12:53.618 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1724)
+[ 05/12/2020 07:12:53.618 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:13:57.198 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/12/2020 07:14:50.006 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 07:14:50.007 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:23:32.192 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 07:23:32.192 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:29:12.545 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 07:29:12.545 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:33:01.829 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/12/2020 07:33:52.932 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 07:33:52.932 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:38:44.647 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/12/2020 07:41:14.327 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 07:41:14.327 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:44:13.390 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1718)
+[ 05/12/2020 07:44:13.390 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:46:46.841 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1718)
+[ 05/12/2020 07:46:46.841 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:55:12.374 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 07:55:12.374 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:56:03.541 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1724)
+[ 05/12/2020 07:56:03.541 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 07:56:09.511 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/12/2020 08:00:39.034 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1724)
+[ 05/12/2020 08:00:39.034 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:01:21.437 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 08:01:21.437 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:01:26.638 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/12/2020 08:07:44.940 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 08:07:44.940 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:08:44.922 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 08:08:44.922 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:14:35.482 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 08:14:35.482 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:19:10.866 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1718)
+[ 05/12/2020 08:19:10.866 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:20:00.428 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1718)
+[ 05/12/2020 08:20:00.428 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:20:08.223 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/12/2020 08:20:57.889 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 08:20:57.889 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 08:21:10.736 handle_queued_x_events FATAL ERROR ] X11 server connection broke (error 1)
+[ 05/12/2020 08:25:05.215 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1718)
+[ 05/12/2020 08:25:05.215 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 09:50:18.894 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1718)
+[ 05/12/2020 09:50:18.894 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 10:28:14.955 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 10:28:14.955 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/12/2020 11:57:25.571 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.571 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.571 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.572 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.572 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.572 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.576 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.576 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.576 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.583 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.583 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.583 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.590 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.590 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.590 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.597 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.597 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.597 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.608 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.608 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.608 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.612 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.612 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.612 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.618 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.618 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.618 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.624 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.624 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.624 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.632 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.632 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.632 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.639 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.639 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.639 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.645 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.645 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.645 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.652 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.652 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.652 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.659 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.659 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.659 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 11:57:25.667 glx_bind_pixmap ERROR ] Failed to query info of pixmap 0x0144823e.
+[ 05/12/2020 11:57:25.667 paint_one ERROR ] Failed to bind texture for window 0x00a00001.
+[ 05/12/2020 11:57:25.667 paint_one ERROR ] Window 0x00a00001 is missing painting data.
+[ 05/12/2020 13:50:16.004 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/12/2020 13:50:16.004 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/13/2020 09:06:22.160 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/13/2020 09:06:22.160 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/13/2020 14:47:10.651 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/13/2020 14:47:10.652 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
+[ 05/13/2020 15:08:58.576 x_new_id FATAL ERROR ] We seems to have run of XIDs. This is either a bug in the X server, or a resource leakage in the compositor. Please open an issue about this problem. The compositor will die.
+[ 05/13/2020 15:09:48.703 x_fence_sync ERROR ] Failed to trigger the fence (X error 136 XSyncBadFence request 134 minor 15 serial 1714)
+[ 05/13/2020 15:09:48.703 paint_all ERROR ] x_fence_sync failed, xrender-sync-fence will be disabled from now on.
