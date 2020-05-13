@@ -26,7 +26,7 @@
 #define TEXTW(X)              (drw_fontset_getwidth(drw, (X)) + lrpad)
 
 /* enums */
-enum { SchemeNorm, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
+enum { SchemeNorm, SchemeBor, SchemeSel, SchemeOut, SchemeLast }; /* color schemes */
 
 struct item {
 	char *text;
@@ -601,6 +601,7 @@ static void setup(void) {
 
 	/* init appearance */
 	scheme[SchemeNorm] = drw_scm_create(drw, colors[SchemeNorm], 2);
+	scheme[SchemeBor] = drw_scm_create(drw, colors[SchemeBor], 2);
 	scheme[SchemeSel] = drw_scm_create(drw, colors[SchemeSel], 2);
 	scheme[SchemeOut] = drw_scm_create(drw, colors[SchemeOut], 2);
 
@@ -674,7 +675,7 @@ static void setup(void) {
 	                    CWOverrideRedirect | CWBackPixel | CWEventMask, &swa);
 
 	if (border_width)
-		XSetWindowBorder(dpy, win, scheme[SchemeSel][ColBg].pixel);
+		XSetWindowBorder(dpy, win, scheme[SchemeBor][ColBg].pixel);
 	/* open input methods */
 	xim = XOpenIM(dpy, NULL, NULL, NULL);
 	xic = XCreateIC(xim, XNInputStyle, XIMPreeditNothing | XIMStatusNothing,
@@ -776,6 +777,8 @@ int main(int argc, char *argv[]) {
 			prompt = argv[++i];
 		else if (!strcmp(argv[i], "-fn"))  /* font or font set */
 			fonts[0] = argv[++i];
+		else if (!strcmp(argv[i], "-bb"))  /* border color */
+			colors[SchemeBor][ColBg] = argv[++i];
 		else if (!strcmp(argv[i], "-nb"))  /* normal background color */
 			colors[SchemeNorm][ColBg] = argv[++i];
 		else if (!strcmp(argv[i], "-nf"))  /* normal foreground color */
