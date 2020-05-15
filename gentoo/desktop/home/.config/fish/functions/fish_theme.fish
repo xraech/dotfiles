@@ -63,6 +63,33 @@ function fish_theme
 	    set -U fish_pager_color_description yellow
 	    set -U fish_pager_color_progress brred
 	    set -U fish_pager_color_secondary brgreen
+	elif test "$argv[1]" = "luna"
+	    set -U fish_color_autosuggestion magenta
+	    set -U fish_color_cancel -r
+	    set -U fish_color_command green #white
+	    set -U fish_color_comment magenta
+	    set -U fish_color_cwd green
+	    set -U fish_color_cwd_root red
+	    set -U fish_color_end blue
+	    set -U fish_color_error red
+	    set -U fish_color_escape yellow #green
+	    set -U fish_color_history_current --bold
+	    set -U fish_color_host normal
+	    set -U fish_color_match --background=brblue
+	    set -U fish_color_normal normal
+	    set -U fish_color_operator blue #green
+	    set -U fish_color_param cyan
+	    set -U fish_color_quote yellow #brblack
+	    set -U fish_color_redirection cyan
+	    set -U fish_color_search_match normal --background=brblack
+	    set -U fish_color_selection black --bold --background=brwhite
+	    set -U fish_color_status red
+	    set -U fish_color_user brgreen
+	    set -U fish_color_valid_path --underline
+	    set -U fish_pager_color_completion normal
+	    set -U fish_pager_color_description blue --background=normal
+	    set -U fish_pager_color_prefix normal --bold #--underline
+	    set -U fish_pager_color_progress brwhite --background=cyan
 	end
     else
 	set -U fish_color_autosuggestion magenta
@@ -82,8 +109,8 @@ function fish_theme
 	set -U fish_color_param cyan
 	set -U fish_color_quote yellow #brblack
 	set -U fish_color_redirection cyan
-	set -U fish_color_search_match normal --background=red
-	set -U fish_color_selection normal --bold --background=brwhite
+	set -U fish_color_search_match normal --background=blue
+	set -U fish_color_selection black --bold --background=brwhite
 	set -U fish_color_status red
 	set -U fish_color_user brgreen
 	set -U fish_color_valid_path --underline

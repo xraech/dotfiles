@@ -39,4 +39,4 @@ bar=$($HOME/.config/bin/getprogressstring 10 "" "" ${volume})
 echo $bar
 msgId="991049"
 
-notify-send -h string:x-canonical-private-synchronous:anything -a "clock_notifier" -u low -i ${ICON} "${bar} ${volume}%"
+notify-send -h string:x-canonical-private-synchronous:anything -a "clock_notifier" -u low -i ${ICON} "${bar}         ${volume}%"

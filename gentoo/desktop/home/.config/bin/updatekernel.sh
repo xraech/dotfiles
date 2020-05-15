@@ -1,6 +1,6 @@
 #!/bin/dash
 
-cp /home/xendak/Downloads/dotfiles/gentoo/kernel/kernelconfig /usr/src/linux/.config
+cp /home/xendak/Downloads/dotfiles/gentoo/desktop/kernel/kernelminimal /usr/src/linux/.config
 
 make oldconfig
 make -j8 modules_prepare || { echo "make modules_prepare failed"; exit 1; }
@@ -12,10 +12,8 @@ echo "Rebuilding Nvidia"
 emerge @modules-rebuild
 echo "Done"
 
-echo "Mounting boot partition
+echo "
 	Please change grub loader"
-mount /dev/sda1/ /mnt/arch/boot
-
-vim /mnt/arch/boot/grub/grub.cfg
+vi /boot/grub/grub.cfg
 
 echo "Done"
