@@ -1,0 +1,4 @@
+>=app-crypt/gcr-3.34.0-r1 gtk
+>=dev-lang/python-2.7.18:2.7 sqlite
+>=app-crypt/pinentry-1.1.0-r2 gnome-keyring
+

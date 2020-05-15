@@ -1,0 +1,244 @@
+# required by games-util/steam-client-meta-0-r20200328::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay
+# required by steam-meta (argument)
+>=virtual/opengl-7.0-r2 abi_x86_32
+# required by virtual/opengl-7.0-r2::gentoo
+# required by games-util/steam-client-meta-0-r20200328::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay
+# required by steam-meta (argument)
+>=media-libs/mesa-19.3.5 abi_x86_32
+# required by media-libs/mesa-19.3.5::gentoo
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/expat-2.2.8 abi_x86_32
+# required by media-libs/mesa-19.3.5::gentoo
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libdrm-2.4.100 abi_x86_32
+# required by media-libs/mesa-19.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libxshmfence-1.3-r1 abi_x86_32
+# required by media-libs/mesa-19.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXdamage-1.1.5 abi_x86_32
+# required by media-libs/mesa-19.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXxf86vm-1.1.4-r1 abi_x86_32
+# required by x11-libs/libXdamage-1.1.5::gentoo
+# required by media-libs/mesa-19.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXfixes-5.0.3-r1 abi_x86_32
+# required by media-libs/mesa-19.3.5::gentoo[gallium,llvm,-video_cards_r600,-opencl,-video_cards_radeonsi,-video_cards_radeon]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=sys-devel/llvm-9.0.1 abi_x86_32
+# required by media-libs/mesa-19.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXrandr-1.5.2 abi_x86_32
+# required by x11-libs/libXrandr-1.5.2::gentoo
+# required by media-libs/mesa-19.3.5::gentoo[X]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=x11-libs/libXrender-0.9.10-r1 abi_x86_32
+# required by sys-devel/llvm-9.0.1::gentoo[libffi]
+# required by media-libs/mesa-19.3.5::gentoo[gallium,llvm,-video_cards_r600,-opencl,-video_cards_radeonsi,-video_cards_radeon]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/libffi-3.3-r1 abi_x86_32
+# required by sys-libs/gpm-1.20.7-r2::gentoo
+# required by www-client/w3m-0.5.3_p20180125::gentoo[gpm]
+# required by virtual/w3m-0::gentoo
+# required by app-text/xmlto-0.0.28-r1::gentoo[text]
+# required by sys-apps/dbus-1.12.16::gentoo
+# required by x11-misc/notification-daemon-3.20.0::gentoo
+# required by virtual/notification-daemon-0::gentoo[-gnome,-kde]
+# required by x11-libs/libnotify-0.7.8::gentoo
+# required by gnome-extra/zenity-3.32.0::gentoo[libnotify]
+# required by games-util/steam-launcher-1.0.0.62::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay
+# required by steam-meta (argument)
+>=sys-libs/ncurses-6.1_p20190609 abi_x86_32
+# required by sys-devel/llvm-9.0.1::gentoo[xml]
+# required by media-libs/mesa-19.3.5::gentoo[gallium,llvm,-video_cards_r600,-opencl,-video_cards_radeonsi,-video_cards_radeon]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/libxml2-2.9.9-r3 abi_x86_32
+# required by dev-libs/libxml2-2.9.9-r3::gentoo[icu]
+# required by sys-devel/llvm-9.0.1::gentoo[xml]
+# required by media-libs/mesa-19.3.5::gentoo[gallium,llvm,-video_cards_r600,-opencl,-video_cards_radeonsi,-video_cards_radeon]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=dev-libs/icu-65.1-r1 abi_x86_32
+# required by sys-libs/ncurses-6.1_p20190609::gentoo[gpm]
+# required by sys-devel/llvm-9.0.1::gentoo[ncurses]
+# required by media-libs/mesa-19.3.5::gentoo[gallium,llvm,-video_cards_r600,-opencl,-video_cards_radeonsi,-video_cards_radeon]
+# required by games-util/steam-games-meta-0-r20191109::steam-overlay
+# required by games-util/steam-meta-0-r20160817::steam-overlay[steamruntime]
+# required by steam-meta (argument)
+>=sys-libs/gpm-1.20.7-r2 abi_x86_32
+# required by app-shells/fish-3.0.2::gentoo
+# required by fish (argument)
+>=dev-libs/libpcre2-10.33-r1 pcre32
+# required by media-libs/libsdl2-2.0.10::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[sdl]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-sound/pulseaudio-13.0 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libsndfile-1.0.28-r4 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo[X]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libSM-1.2.3 abi_x86_32
+# required by x11-libs/libSM-1.2.3::gentoo
+# required by media-sound/pulseaudio-13.0::gentoo[X]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libICE-1.0.10 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo[X]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=x11-libs/libXtst-1.2.3-r1 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo[caps]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/libcap-2.26-r2 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo[glib]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/glib-2.60.7-r2 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo[tcpd]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-apps/tcp-wrappers-7.6.28 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo[asyncns]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=net-libs/libasyncns-0.8-r4 abi_x86_32
+# required by media-sound/pulseaudio-13.0::gentoo[alsa,alsa-plugin]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-plugins/alsa-plugins-1.2.1 abi_x86_32
+# required by dev-libs/glib-2.60.7-r2::gentoo
+# required by media-sound/pulseaudio-13.0::gentoo[glib]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libpcre-8.42 abi_x86_32
+# required by sys-libs/libcap-2.26-r2::gentoo
+# required by sys-auth/rtkit-0.11-r2::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[realtime,pulseaudio]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-apps/attr-2.4.48-r3 abi_x86_32
+# required by sys-libs/libcap-2.26-r2::gentoo[pam]
+# required by sys-auth/rtkit-0.11-r2::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[realtime,pulseaudio]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/pam-1.3.1-r2 abi_x86_32
+# required by sys-libs/pam-1.3.1-r2::gentoo[berkdb]
+# required by sys-libs/libcap-2.26-r2::gentoo[pam]
+# required by sys-auth/rtkit-0.11-r2::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[realtime,pulseaudio]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/db-5.3.28-r2 abi_x86_32
+# required by sys-libs/pam-1.3.1-r2::gentoo[cracklib]
+# required by sys-libs/libcap-2.26-r2::gentoo[pam]
+# required by sys-auth/rtkit-0.11-r2::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[realtime,pulseaudio]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-libs/cracklib-2.9.7 abi_x86_32
+# required by media-libs/libsndfile-1.0.28-r4::gentoo[-minimal]
+# required by media-sound/pulseaudio-13.0::gentoo
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/flac-1.3.3 abi_x86_32
+# required by media-libs/libvorbis-1.3.6-r1::gentoo
+# required by media-video/ffmpeg-4.2.2::gentoo[vorbis]
+# required by media-sound/mpd-0.21.20::gentoo[ffmpeg]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libogg-1.3.3 abi_x86_32
+# required by media-libs/libsndfile-1.0.28-r4::gentoo[-minimal]
+# required by media-sound/pulseaudio-13.0::gentoo
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvorbis-1.3.6-r1 abi_x86_32
+# required by sys-libs/pam-1.3.1-r2::gentoo
+# required by sys-libs/libcap-2.26-r2::gentoo[pam]
+# required by sys-auth/rtkit-0.11-r2::gentoo
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[realtime,pulseaudio]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/libcrypt-1 abi_x86_32
+# required by dev-libs/glib-2.60.7-r2::gentoo
+# required by media-sound/pulseaudio-13.0::gentoo[glib]
+# required by media-sound/mpg123-1.25.10-r1::gentoo[pulseaudio]
+# required by app-emulation/wine-vanilla-4.0.2::gentoo[mp3]
+# required by virtual/wine-0-r7::gentoo
+# required by @selected
+# required by @world (argument)
+>=virtual/libffi-3.3_rc0 abi_x86_32
