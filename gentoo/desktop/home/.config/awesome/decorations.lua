@@ -3,7 +3,7 @@ local wibox = require("wibox")
 local gears = require("gears")
 local beautiful = require("beautiful")
 
-mytextclock = wibox.widget.textclock()
+mytextclock = wibox.widget.textclock("%H:%M    %d %A %B")
 
 screen.connect_signal("request::desktop_decoration", function(s)
     -- Each screen has its own tag table.
