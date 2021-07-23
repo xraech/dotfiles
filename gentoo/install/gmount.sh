@@ -1,7 +1,7 @@
 #!/bin/sh
-mount -o defaults,noatime,compress=lzo,autodefrag,subvol=root /dev/nvme0n1p9 /mnt/gentoo
-mount -o defaults,noatime,compress=lzo,autodefrag,subvol=home /dev/nvme0n1p9 /mnt/gentoo/home
-mount -o defaults,noatime /dev/nvme0n1p4 /mnt/gentoo/boot
+mount -o defaults,noatime,compress=lzo,autodefrag,subvol=ROOT /dev/nvme1n1p1 /mnt/gentoo
+mount -o defaults,noatime,compress=lzo,autodefrag,subvol=HOME /dev/nvme1n1p1 /mnt/gentoo/home
+mount -o defaults,noatime /dev/nvme1n1p2 /mnt/gentoo/boot
 
 mount --types proc /proc /mnt/gentoo/proc
 mount --rbind /sys /mnt/gentoo/sys
